@@ -9,7 +9,7 @@ while true
   # Increment the chunk number
   chunk_number += 1
   # Construct the filename for the current chunk
-  chunk_filename = "large_file_chunk#{chunk_number}.mp4"
+  chunk_filename = "large_file_chunk#{chunk_number}.txt"
   # Break out of the loop if the chunk file doesn't exist
   break unless File.exist?(chunk_filename)
   # Read the contents of the chunk file
