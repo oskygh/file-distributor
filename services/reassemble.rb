@@ -1,5 +1,11 @@
-# Initialize the output file
-output_file = File.open('output.mp4', 'wb')
+class Reassemble
+  def initialize(input_file)
+    @input_file=input_file
+  end
+
+  def reassemble
+    # Initialize the output file
+output_file = File.open(@input_file, 'wb')
 
 # Initialize the chunk counter
 chunk_number = 1
@@ -33,3 +39,6 @@ end
 
 # Close the output file
 output_file.close
+
+  end
+end
